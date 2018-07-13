@@ -1,0 +1,40 @@
+.mt0 { margin-top: 0; }
+.mb0 { margin-bottom: 0; }
+
+.mt5 { margin-top: 5px; }
+.ml5 { margin-left: 5px; }
+.mb5 { margin-bottom: 5px; }
+.mr5 { margin-right: 5px; }
+
+.mt10 { margin-top: 10px; }
+.ml10 { margin-left: 10px; }
+.mb10 { margin-bottom: 10px; }
+.mr10 { margin-right: 10px; }
+
+.mt325 { margin-top: 3.25rem; }
+.mt60 { margin-top: 60px;}
+
+.pb5 { padding-bottom: 5rem;}
+
+.tr {
+  position: fixed;
+  top: 5rem;
+  right: 1rem;
+}
+
+.tr2 {
+  position: absolute;
+  top: 2.25rem;
+  right: 0;
+  z-index: 9999;
+}
+
+@media only screen 
+  and (max-width: 649px) {
+    .tr {
+      position: fixed;
+      top: 0.85rem;
+      right: 7rem;
+    }
+}
+

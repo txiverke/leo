@@ -1,0 +1,91 @@
+.app-form{
+  margin-bottom: 15px;
+}
+
+.app-form-group {
+  min-height: 5rem;
+}
+
+.app-form-group:last-of-type {
+  height: 7rem;
+}
+
+.app-form-label {
+  font-size: var(--minSize);
+  font-family: Lighter;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.app-form-input,
+.app-form-input-with-button { 
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: .25rem;
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+.app-select {
+  padding: 1rem;
+  width: 100%;
+  height: 2rem;
+  min-height: 2rem;
+  font-size: var(--minSize);
+  background: white;
+  color: var(--bgColor);
+}
+
+.app-range {
+  width: 80%;
+  margin-right: 0.5rem;
+}
+
+.app-form-input-with-button {
+  display: inline-block;
+  width: 78%;
+  box-sizing: border-box;
+}
+.app-form-input-button {
+  width: 18%;
+  float: right;
+  padding: 0.5rem 0;
+}
+
+textarea:focus, 
+input:focus{
+  outline: none;
+}
+
+input.active:valid,
+textarea.active.valid {
+  border: 1px solid var(--selectColor);
+}
+
+input.active:invalid,
+textarea.active.invalid {
+  border: 1px solid var(--secondColor);
+}
+
+.app-form-error {
+  font-family: Lighter;
+  color: var(--secondColor);
+  font-size: var(--tinySize);
+  margin: 2px 0 0 0;
+}
+
+

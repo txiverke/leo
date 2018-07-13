@@ -1,0 +1,132 @@
+.btn {
+  outline: none;
+  display: inline-block;
+  background: transparent;
+  color: var(--selectColor);
+  padding: 0.5rem 1.5rem;
+  font-family: Lighter;
+  font-size: var(--textSize);
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid var(--selectColor);
+  border-radius: 25px;
+  transition-property: color opacity background;
+  transition-duration: .3s;
+  text-decoration: none;
+  z-index: 1000 !important;
+}
+
+.btn:hover {
+  background: var(--selectColor);
+  color: var(--textColor);
+}
+
+.btn:disabled,
+.btn:hover:disabled {
+  background: var(--bgColor);
+  border: 1px solid grey;
+  color: grey;
+}
+
+.btn-icon {
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-clean,
+.btn-clean:hover {
+  border: none;
+  background: none;
+}
+
+.btn-alpha {
+  opacity: .5
+}
+
+.btn-alpha:hover {
+  opacity: 1
+}
+
+.btn-show {
+  transform: rotate(45deg);
+}
+.btn-hide {
+  transform: rotate(0deg);
+}
+
+.btn-centered {
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  position: absolute;
+}
+
+.btn-close {
+  font-size: var(--maxSize);
+  color: var(--secondColor);
+  border: none;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-close:hover {
+  cursor: pointer;
+  background: transparent;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.btn-next,
+.btn-prev {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  color: var(--selectColor);
+  border: 1px solid var(--selectColor);
+  border-radius: 25px;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.5;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+}
+
+.btn-next {
+  position: absolute;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.btn-next:hover,
+.btn-prev:hover {
+  background: var(--selectColor);
+  color: var(--textColor);
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .btn-back {
+    padding: 0.2rem 0.35rem;
+  }
+  .btn-back > .mr5 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+  }
+  .btn-back-txt {
+    display: none;
+
+  }
+}
+
+

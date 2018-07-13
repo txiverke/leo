@@ -1,0 +1,134 @@
+p, .txt {
+  font-size: var(--textSize);
+  font-family: Lighter;
+  color: var(--textColor);
+  line-height: var(--maxSize);
+}
+
+.txt-center{
+  width: 100%;
+  text-align: center;
+}
+
+.txt-huge {
+  font-size: var(--hugeSize);
+  font-family: Number;
+  color: var(--textColor)
+}
+
+.txt-link {
+  color: var(--selectColor);
+  text-decoration: underline;
+}
+
+.txt-link:hover {
+  text-decoration: none;
+}
+
+.txt-bold {
+  font-family: Bold
+}
+
+.txt-tiny {
+  font-size: var(--tinySize) !important;
+  font-family: Lighter;
+  color: var(--selectColor);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  z-index: 1;
+}
+
+.txt-transparent {
+  transition: opacity;
+  transition-duration: 0.5s;
+  opacity: 0.3;
+}
+
+.txt-transparent:hover {
+  opacity: 1;
+}
+
+.txt-highlight {
+  color: var(--secondColor);
+}
+
+.txt-message,
+.txt-message-error {
+  font-family: Lighter;
+  z-index: 100;
+  background: var(--bgColor);
+  font-size: var(--minSize);
+  color: var(--selectColor);
+  display: block;
+  border: 1px solid var(--selectColor);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-align: center;
+  width: auto;
+}
+
+.txt-message-error {
+  color: var(--secondColor);
+  border-color: var(--secondColor);
+}
+
+.tit-section {
+  font-size: var(--titleSize);
+  font-family: Lighter;
+  border-bottom: 1px dotted var(--textColor);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.tit-section-view {
+  font-size: var(--titleSize);
+  font-family: Lighter;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.tit-section-background {
+  font-family: Bold;
+  font-size: 2.75rem;
+  color: var(--textColor);
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
+  text-align: center;
+  line-height: 2.3rem;
+  margin: 0;
+  padding: 4.5rem 0 0.25rem;
+}
+
+.subtit-section-background {
+  font-family: Lighter;
+  font-size: var(--maxSize);
+  color: var(--textColor);
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: auto;
+}
+
+.subtit-section-view{
+  font-family: Bold;
+  font-size: var(--textSize);
+  color: var(--selectColor);
+  text-align: center;
+  margin-top: -0.25rem;
+  padding-top: 0;
+}
+
+.app-separator {
+  border: none;
+  border-top: 1px dotted var(--textColor);
+}
+
+.hidden {
+  display: none
+}
+
+::selection {
+  background: var(--selectColor) /* WebKit/Blink Browsers */
+}
