@@ -1,7 +1,8 @@
 :root {
   --textColor: #333333;
+  --mainColor: #aa9fe3;
   --titleSize: 2.5rem;
-  --maxSize: 1.5rem;
+  --maxSize: 1.25rem;
   --textSize:1rem;
   --tinySize: 0.8rem;
 }
