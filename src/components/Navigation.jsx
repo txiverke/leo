@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import { getSlug } from '../utils/helpers'
+import Logo from '../assets/imgs/logo_tiny.png'
 
 class Navigation extends React.Component {
   state = { 
@@ -19,10 +20,14 @@ class Navigation extends React.Component {
     
     const List = <ul className={`app-nav-list ${icon}`}>
       <li className="app-nav-item btn-close">
+        <img src={Logo} alt="Leo, leo" />
         <button onClick={this.handleVisibility}>
           <span className="txt">CERRAR</span>
           <span className={`icon-close`}></span>
         </button>
+      </li>
+      <li className="app-nav-item logo">
+        <img src={Logo} alt="Leo, leo" />
       </li>
       {nav.map(item => {
         const label = getSlug(item.label)
@@ -53,6 +58,7 @@ class Navigation extends React.Component {
         className="btn-menu"
         onClick={this.handleVisibility}
       >
+        <span className="txt">MENU</span>
         <span className={`icon-menu`}></span>
       </button>
     </div>

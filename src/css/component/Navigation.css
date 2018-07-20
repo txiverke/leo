@@ -6,7 +6,8 @@
   z-index: 10;
 }
 
-.app-nav-list {
+.app-nav-list,
+.app-nav-item.logo:hover  {
   position: relative;
   background: var(--menuBg);
   color: var(--textColor);
@@ -20,9 +21,28 @@
   border-bottom: 1px solid #eeeeee;
 }
 
+.app-nav-item.logo {
+  flex: 1;
+  justify-content: center;
+}
+
+.app-nav-item.logo > img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+  opacity: 0.9;
+  transition-property: opacity width;
+  transition-duration: 0.25s; 
+}
+
+.app-nav-item.logo > img:hover {
+  width: 60px;
+  opacity: 1;
+}
+
 .app-nav-item {
   position: relative;
-  flex: 1;
+  flex: 2;
   height: 70px;
   display: flex;
   align-items: center;
@@ -54,7 +74,7 @@
 }
 
 .app-nav-item > a:hover,
-.app-nav-item:hover {
+.app-subnav-item > a:hover {
   background: white;
 }
 
@@ -62,8 +82,6 @@
   position: absolute;
   top: -300px;
   width: 100%;
-  background: var(--menuBg);
-  color: var(--mainColor);
   list-style: none;
   padding: 0;
   margin: 0;
@@ -73,7 +91,7 @@
 }
 
 .app-nav-item:hover .app-subnav-list {
-  top: 80px;
+  top: 70px;
   opacity: 1;
 }
 
@@ -83,11 +101,12 @@
   padding: 0.75rem;
   text-decoration: none;
   text-align: center;
-  color: var(--mainColor);
+  background: var(--menuBg);
+  border-bottom: 1px solid #eeeeee;
+  color: var(--textColor);
   z-index: 1;
   transition-property: background color;
   transition-duration: 0.5s;
-
 }
 
 .app-respMenu {
@@ -95,8 +114,10 @@
   display: none;
   top: 0;
   right: 0;
-  height: 100vh;
+  height: 70px;
   width: 100%;
+  background: white;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .app-menu-bg {
@@ -137,8 +158,8 @@ and (max-width: 649px) {
     align-items: flex-start;
   }
 
-  .app-nav-item.btn-close {
-    display: block;
+  .app-nav-item.logo {
+    display: none;
   }
 
   .app-nav-item > a,
@@ -151,22 +172,39 @@ and (max-width: 649px) {
     text-align: left;
   }
 
-  .app-nav-item > button {
-    display: block;
+  .app-nav-item.btn-close {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border-bottom: 1px solid #666666;
+  }
+
+  .app-nav-item.btn-close > img {
+    width: 45px;
+    height: auto;
+    margin: 0.5rem 0 0 1.5rem;
+  }
+
+  .app-nav-item.btn-close > button,
+  .btn-menu {
+    flex: 1;
     background: white;
     border: none;
-    border-bottom: 2px solid #666666;
     outline: none;
+    width: auto;
+    align-self: flex-end;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 
-  .app-nav-item > button > span {
+  .app-nav-item > button > span,
+  .btn-menu > span {
     color: var(--secondColor);
   }
 
-  .app-nav-item > button > [class^="icon-"] {
+  .app-nav-item > button > [class^="icon-"],
+  .btn-menu > [class^="icon-"] {
     font-size: 1.5rem;
     margin-left: 1rem;
   }
