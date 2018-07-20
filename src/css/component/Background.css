@@ -5,13 +5,13 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 725px;
   overflow: hidden;
   opacity: 0;
   transition-property: opacity;
   transition-duration:.5s;
   transition-timing-function: linear;
-  
+  z-index: 0;
 }
 
 .app-background-render {

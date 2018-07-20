@@ -38,95 +38,14 @@
   color: grey;
 }
 
-.btn-icon {
-  padding: 0.5rem 0.75rem;
-}
-
-.btn-clean,
-.btn-clean:hover {
+.btn-menu {
   border: none;
-  background: none;
-}
-
-.btn-alpha {
-  opacity: .5
-}
-
-.btn-alpha:hover {
-  opacity: 1
-}
-
-.btn-show {
-  transform: rotate(45deg);
-}
-.btn-hide {
-  transform: rotate(0deg);
-}
-
-.btn-centered {
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  position: absolute;
-}
-
-.btn-close {
-  font-size: var(--maxSize);
-  color: var(--secondColor);
-  border: none;
-  padding: 0.5rem;
-  text-decoration: none;
-}
-
-.btn-close:hover {
-  cursor: pointer;
-  background: transparent;
-  color: var(--textColor);
-  text-decoration: none;
-}
-
-.btn-next,
-.btn-prev {
-  position: relative;
-  display: inline-block;
-  background: transparent;
-  color: var(--selectColor);
-  border: 1px solid var(--selectColor);
-  border-radius: 25px;
-  padding: 0.75rem;
-  text-decoration: none;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  opacity: 0.5;
-  text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
-}
-
-.btn-next {
-  position: absolute;
-  right: 0;
-  transform: rotate(180deg);
-}
-
-.btn-next:hover,
-.btn-prev:hover {
-  background: var(--selectColor);
-  color: var(--textColor);
-  opacity: 1;
-}
-
-@media (max-width: 450px) {
-  .btn-back {
-    padding: 0.2rem 0.35rem;
-  }
-  .btn-back > .mr5 {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.6rem;
-  }
-  .btn-back-txt {
-    display: none;
-
-  }
+    background: transparent;
+    font-size: 2rem;
+    color: var(--secondColor);
+    padding: 1.3rem 1.5rem;
+    cursor: pointer;
+    outline: none;
 }
 
 

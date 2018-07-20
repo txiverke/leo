@@ -1,7 +1,23 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const Landing = props => 
-  <div className="app-section">Not found</div>
+const Landing = props => {
+  const { DIC } = props
+
+  console.log(DIC)
+  return (
+    <article className="app-section">
+      <Helmet 
+        title={DIC.NOTFOUND} 
+        meta={[
+          { name:"description", content: `${DIC.NOTFOUND}` },
+          { property: "og:title", content: `${DIC.NOTFOUND}` }
+        ]}
+      />
+      <h1>{DIC.NOTFOUND}</h1>
+    </article>
+    )
+}
+  
 
 export default Landing

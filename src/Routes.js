@@ -10,7 +10,7 @@ const Routes = props => {
   return (
     <Switch>
       <Route exact path="/" render={ props => <Landing {...props} DIC={DIC} /> } />
-      <Route render={props => <NotFound {...props} />} />
+      <Route render={props => <NotFound DIC={DIC} />} />
     </Switch>
   )
 }

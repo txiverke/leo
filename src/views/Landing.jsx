@@ -1,11 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+import Header from '../components/Header'
+
 const Landing = props => {
   const { DIC } = props
   
   return (
-    <article className="app-section">
+    <div className="app-section">
       <Helmet 
         title={DIC.DESCRIPTION} 
         meta={[
@@ -13,7 +15,8 @@ const Landing = props => {
           { property: "og:title", content: `${DIC.DESCRIPTION}` }
         ]}
       />
-    </article>
+      <Header DIC={DIC} />
+    </div>
   )
 }
   
